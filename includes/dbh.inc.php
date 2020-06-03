@@ -5,9 +5,9 @@ $dBUsername = "root";
 $dBPassword = "";
 $dBName = "loginsystem";
 
-$conn = mysql_connect($servername, $dBUsername, $dBPassword, $dBName)
+$conn = mysqli_connect($servername, $dBUsername, $dBPassword, $dBName);
 
 if (!$conn) {
-	die("Connection Failed: ", mysql_connect_error());
+	die("Connection Failed: ". mysqli_connect_error());
 }
 
