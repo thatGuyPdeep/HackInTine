@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-	<form action="process.php" method="get">
-		<input type="text" name="text">
-		<input type="submit">
-	</form>
+<?php
+	require "header.php";
+?>
 
-</body>
-</html>
+	<main>
+		<p>You are logged out!</p>
+		<p>You are logged in!</p>
+	</main>
+
+<?php
+	require "footer.php";
+?>
