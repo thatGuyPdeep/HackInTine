@@ -3,8 +3,12 @@
 ?>
 
 	<main>
-		<p>You are logged out!</p>
-		<p>You are logged in!</p>
+		<div class="wrapper-main">
+			<selection class="selection-default">
+				<p>You are logged out!</p>
+				<p>You are logged in!</p>
+			</selection>
+		</div>
 	</main>
 
 <?php
