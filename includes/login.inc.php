@@ -8,7 +8,7 @@ if(isset($_POST['login-submit'])){
 	$password = $_POST['pwd'];
 
 	if (empty($mailuid) || empty($password)) {
-		header("Location:../index.php?error=emptyfields".$username);
+		header("Location: ../index.php?error=emptyfields");
 		exit();	
 	}
 	else{
@@ -20,10 +20,10 @@ if(isset($_POST['login-submit'])){
 		}
 		else{
 			
-			mysqli_stmt_bind_param($stmt, "ss", $mailuid, $password);
+			mysqli_stmt_bind_param($stmt, "ss", $mailuid, $mailuid);
 			mysqli_stmt_execute($stmt);
 			$result = mysqli_stmt_get_result($stmt);
-			if ($row = mysqli_fetch_assoc()) {
+			if ($row = mysqli_fetch_assoc($result)) {
 				$pwdcheck = password_verify($password, $row['pwdUsers']);
 				if ($pwdcheck == false) {
 					header("Location:../index.php?error=wrongpwd");
