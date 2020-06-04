@@ -14,8 +14,8 @@
 			</a>
 			<ul>
 				<li><a href="index.php">Home</a></li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">About me</a></li>
+				<li><a href="#">Search</a></li>
+				<li><a href="#">Help</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
 			<div class="header-login">
